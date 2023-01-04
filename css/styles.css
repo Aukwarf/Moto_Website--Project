@@ -1,0 +1,241 @@
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    link;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Montserrat";
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+
+/*  **********************tete de page************************** */
+
+header.header {
+    display: flex;
+    align-items: center;
+}
+
+header.header img {
+    width: 150px;
+}
+section.top-page {
+    background: url('../images/bg.jpg');
+    background-size: cover;
+    height: 80vh;
+    padding: 25px;
+}
+
+/*  **********************page de bienvenue (landing page)******************* */
+
+.landing-page {
+    position: relative;
+    padding: 20px 50px;
+}
+
+.big-title {
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    font-family: 'Abril FatFace', cursive;
+    font-weight: 100;
+    width: 40%;
+}
+
+.scroll-down {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0px;
+}
+
+/* menu de navigation */
+
+nav.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    margin-left: 30px;
+}
+
+nav.nav li a {
+    font-size: 22px;
+    color: white;
+}
+
+a:hover {
+    font-size: 25px;
+    font-weight: bold;
+    transition-duration: smooth;
+}
+
+/*  *****************services************************ */
+
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.delivery-icon {
+    font-size: 50px;
+    color: #c21c16;
+}
+
+.service-details {
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/*  **********************best sells************************ */
+
+.section-title {
+    font-size: 50px;
+    font-family: 'Abril FatFace', cursive;
+    font-weight: 100;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.section-title:before {
+    content: "";
+    position: absolute;
+    background-color:#c21c16;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+.best-items {
+    margin: 100px;
+}
+
+.best-motos {
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.moto-box {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.no-grid {
+    min-width: 350px;
+    height: 500px;
+    flex: 1;
+}
+
+.moto1 {
+    background-image: url(../images/nos_meilleures_ventes/1.jpg);
+}
+
+.moto2 {
+    background-image: url(../images/nos_meilleures_ventes/2.jpg);
+}
+
+.moto3 {
+    background-image: url(../images/nos_meilleures_ventes/3.jpg);
+}
+
+.moto4 {
+    background-image: url(../images/nos_meilleures_ventes/4.jpg);
+}
+
+.moto-details {
+    background-color: #FFFFFFDF;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 5px 20px;
+}
+
+.moto-name {
+    font-size: 22px;
+    color: black;
+    font-weight: 600;
+}
+
+.moto-price {
+    color: #c21c16;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+/*  ********************NOS PLANTES************************ */
+
+.all-motos {
+    margin: 100px;
+}
+
+.moto-grid {
+    display: grid;
+    min-height: 150vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 420px);
+}
+
+.moto-grid1 {
+    background-image: url(../images/nos_plantes/1.jpg);
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.moto-grid2 {
+    background-image: url(../images/nos_plantes/2.jpg);
+    grid-column: 3/5;
+}
+
+.moto-grid3 {
+    background-image: url(../images/nos_plantes/3.jpg);
+    grid-column: 3/5;
+}
+
+.moto-grid4 {
+    background-image: url(../images/nos_plantes/4.jpg);
+    grid-column: 1;
+    grid-row: 3/5;
+}
+
+.moto-grid5 {
+    background-image: url(../images/nos_plantes/5.jpg);
+    grid-column: 2/4;
+    grid-row: 3/5;
+}
+
+.moto-grid6 {
+    background-image: url(../images/nos_plantes/6.jpg);
+    grid-column: 4;
+    grid-row: 3/5;
+}
+
+/* ************************PIED DE PAGE************************** */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+    font-weight: 600;
+}
+
+footer a.cgv {
+    text-decoration: none;
+    color: black;
+}
